@@ -1,17 +1,10 @@
-import { Layout, Banner, Hero, Carousal } from 'components';
-import {
-  bannerProps,
-  carousalProps,
-  heroProps,
-  heroProps2,
-  heroProps3,
-} from 'data/pages/home';
+import { Layout, Banner, Hero } from 'components';
+import { bannerProps, heroProps, heroProps2, heroProps3 } from 'data';
 
 function Home() {
   return (
     <Layout>
       <Banner {...bannerProps} />
-      <Carousal {...carousalProps} />
       <Hero {...heroProps} />
       <Hero {...heroProps2} />
       <Hero {...heroProps3} />

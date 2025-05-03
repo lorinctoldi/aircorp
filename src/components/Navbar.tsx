@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from 'assets/svg/logo.svg';
 
 import { NavItem, NavbarProps } from 'types';
-import { Submenu, NavbarIcon } from 'components/nav';
+import { Submenu, NavbarIcon } from 'components/navbar/';
 
 import { useScroll, useLockBodyScroll } from 'hooks';
 

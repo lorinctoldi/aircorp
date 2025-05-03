@@ -8,4 +8,5 @@ export type MediaItem = {
 
 export type CarousalProps = {
   items: MediaItem[];
+  darkMode: boolean;
 };

@@ -10,6 +10,7 @@ module.exports = {
         sans: ['"Suisse BP Intl"', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
+        'darker-gray': 'rgb(30,30,30)',
         'dark-gray': 'rgb(45,45,45)',
         'light-gray': 'rgb(125,125,125)',
       },

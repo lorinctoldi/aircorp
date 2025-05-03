@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { CarousalProps } from 'types';
 
-export default function Carousal({ items }: CarousalProps) {
+export default function Carousal({ items, darkMode }: CarousalProps) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
@@ -77,7 +77,9 @@ export default function Carousal({ items }: CarousalProps) {
   }, [touchStart, touchEnd, mouseStart, mouseEnd]);
 
   return (
-    <div className="relative w-full h-auto p-5 bg-white md:p-7 lg:h-screen lg:p-16 aspect-video">
+    <div
+      className={`relative w-full h-auto px-5 md:px-7 lg:h-screen lg:px-16 py-4 aspect-video ${darkMode ? 'bg-darker-gray' : 'bg-white'}`}
+    >
       <div
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}

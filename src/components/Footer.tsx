@@ -8,7 +8,7 @@ export default function Footer({ nav, socials, labels }: FooterProps) {
   const [email, setEmail] = useState('');
 
   return (
-    <footer className="flex flex-col w-full px-8 pt-16 pb-4 leading-normal bg-white gap-y-8 md:col-span-2 md:grid md:grid-cols-3 md:gap-y-0 md:px-16 md:pb-4">
+    <footer className="flex flex-col w-full px-8 pt-16 pb-4 leading-normal bg-white gap-y-8 md:col-span-2 md:grid md:grid-cols-3 md:gap-y-0 md:px-8 lg:px-16 md:pb-4">
       <nav className="flex flex-col col-span-2 gap-y-8 md:grid md:grid-cols-3 md:gap-8">
         {nav.length &&
           nav.map((items, index) => {
