@@ -35,7 +35,10 @@ export default function Banner(props: BannerProps) {
           />
         )}
       </div>
-      <div ref={textRef} className="max-w-[900px] flex flex-col text-center">
+      <div
+        ref={textRef}
+        className="max-w-[900px] px-8 flex flex-col text-center"
+      >
         <div
           className="text-3xl leading-none text-white transition-all duration-700 ease-out transform delay-400 text-balance lg:text-7xl"
           style={{
@@ -48,7 +51,7 @@ export default function Banner(props: BannerProps) {
         {props?.link && (
           <div className="flex justify-center w-full pt-11 lg:pt-8">
             <div
-              className="px-4 py-1 text-xl text-white transition-all duration-700 ease-out delay-500 transform bg-white bg-opacity-25 rounded-full cursor-pointer w-fit backdrop-blur-md lg:text-xl"
+              className="px-4 py-1 text-white transition-all duration-700 ease-out delay-500 transform bg-white bg-opacity-25 rounded-full cursor-pointer text-md w-fit backdrop-blur-md lg:text-xl"
               style={{
                 opacity: showText ? 100 : 0,
                 transform: `translateY(${showText ? '0%' : '-100%'})`,
