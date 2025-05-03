@@ -23,7 +23,6 @@ export default function useRevealOnScroll(
     observer.observe(currentElement);
 
     return () => {
-      // Use the stored reference for cleanup
       observer.unobserve(currentElement);
     };
   }, [ref, threshold]);

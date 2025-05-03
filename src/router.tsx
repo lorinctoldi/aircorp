@@ -5,8 +5,6 @@ function AppRouter() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      {/*
-      <Route path="/technology" element={<Technology />} /> */}
     </Routes>
   );
 }

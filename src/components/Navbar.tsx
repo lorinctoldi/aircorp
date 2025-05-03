@@ -74,7 +74,6 @@ export default function Navbar({ navItems }: NavbarProps) {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <nav
         className={`h-screen w-full overflow-hidden bg-white transition-all delay-200 duration-700 ease-[cubic-bezier(.6,.01,.37,.98)] lg:hidden ${
           isOpen ? 'max-h-screen' : 'max-h-0'
