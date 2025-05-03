@@ -1,4 +1,4 @@
-import { BannerProps, HeroProps } from 'types';
+import { BannerProps, HeroProps, TextHeroProps } from 'types';
 
 export const bannerProps: BannerProps = {
   type: 'video',
@@ -32,4 +32,22 @@ export const heroProps2: HeroProps = {
   description: 'An Advanced Carbon Conversion Technology Platform',
   link: '/',
   linkTitle: 'Learn More',
+};
+
+export const textHeroSplitProps: TextHeroProps = {
+  split: true,
+  title: 'The Future of Clean Energy',
+  text: [
+    'Founded in 2017 by Gregory Constantine and Dr. Stafford Sheehan, the AIRCO team has a core foundation in energy, tech, and defense. Our dynamic team of industry veterans brings deep expertise across all business areas. From R&D and engineering to operations, logistics, and policy, we leverage years of experience to develop scalable fuel innovation solutions.',
+    'AIRMADE™ fuels are built for a net-zero future.',
+  ],
+};
+
+export const textHeroDefaultProps: TextHeroProps = {
+  split: false,
+  title: 'Sustainable Innovation',
+  text: [
+    'From CO₂ to high-value products. From CO₂ to high-value products.We turn emissions into solutions.',
+    'We turn emissions into solutions.',
+  ],
 };
