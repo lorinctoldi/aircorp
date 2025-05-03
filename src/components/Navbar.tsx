@@ -24,7 +24,7 @@ export default function Navbar({ navItems }: NavbarProps) {
 
   return (
     <header
-      className="fixed top-0 left-0 z-10 w-full font-sans transition-transform duration-300 bg-white"
+      className="fixed top-0 left-0 z-50 w-full font-sans transition-transform duration-300 bg-white"
       style={{ transform: `translateY(${isScrollingUp ? '0%' : '-100%'})` }}
     >
       <div className="relative flex items-center justify-center w-full px-6 py-6 md:px-8 md:py-8 lg:justify-normal lg:px-16 lg:py-5">

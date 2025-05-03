@@ -4,3 +4,4 @@ export { default as Footer } from 'components/Footer';
 export { default as Banner } from 'components/Banner';
 export { default as Hero } from 'components/Hero';
 export { default as TextHero } from 'components/TextHero';
+export { default as Carousal } from 'components/Carousal';

@@ -1,20 +1,20 @@
-import { Layout, Banner, Hero, TextHero } from 'components';
+import { Layout, Banner, Hero, Carousal } from 'components';
 import {
   bannerProps,
+  carousalProps,
   heroProps,
   heroProps2,
-  textHeroDefaultProps,
-  textHeroSplitProps,
+  heroProps3,
 } from 'data/pages/home';
 
 function Home() {
   return (
     <Layout>
       <Banner {...bannerProps} />
+      <Carousal {...carousalProps} />
       <Hero {...heroProps} />
       <Hero {...heroProps2} />
-      <TextHero {...textHeroDefaultProps} />
-      <TextHero {...textHeroSplitProps} />
+      <Hero {...heroProps3} />
     </Layout>
   );
 }

@@ -1,4 +1,4 @@
-import { BannerProps, HeroProps, TextHeroProps } from 'types';
+import { BannerProps, CarousalProps, HeroProps, TextHeroProps } from 'types';
 
 export const bannerProps: BannerProps = {
   type: 'video',
@@ -34,20 +34,41 @@ export const heroProps2: HeroProps = {
   linkTitle: 'Learn More',
 };
 
-export const textHeroSplitProps: TextHeroProps = {
-  split: true,
-  title: 'The Future of Clean Energy',
-  text: [
-    'Founded in 2017 by Gregory Constantine and Dr. Stafford Sheehan, the AIRCO team has a core foundation in energy, tech, and defense. Our dynamic team of industry veterans brings deep expertise across all business areas. From R&D and engineering to operations, logistics, and policy, we leverage years of experience to develop scalable fuel innovation solutions.',
-    'AIRMADE™ fuels are built for a net-zero future.',
-  ],
+export const heroProps3: HeroProps = {
+  type: 'video',
+  source:
+    'https://res.cloudinary.com/air-company/video/upload/c_scale,q_auto,w_640/v1738961567/Website/AIRCO-Website-SAF-Module_cbsfmj.mp4',
+  poster:
+    'https://res.cloudinary.com/air-company/video/upload/so_0/w_640,q_80/v1738961567/Website/AIRCO-Website-SAF-Module_cbsfmj.webp',
+  title: 'AIRMADE® SAF',
+  description: 'Fully-Formulated Jet Fuel Made from CO2',
+  link: '/',
+  linkTitle: 'Learn More',
 };
 
-export const textHeroDefaultProps: TextHeroProps = {
-  split: false,
-  title: 'Sustainable Innovation',
-  text: [
-    'From CO₂ to high-value products. From CO₂ to high-value products.We turn emissions into solutions.',
-    'We turn emissions into solutions.',
+export const carousalProps: CarousalProps = {
+  items: [
+    {
+      type: 'video',
+      source:
+        'https://res.cloudinary.com/air-company/video/upload/c_scale,q_auto,w_1440/v1744698612/Website/DoD-Air-Module-Carousel-Frame-1_l6xoiy.mp4',
+      poster:
+        'https://res.cloudinary.com/air-company/video/upload/c_scale,q_auto,w_640/v1744698612/Website/DoD-Air-Module-Carousel-Frame-1_l6xoiy.mp4',
+    },
+    {
+      type: 'image',
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/N0cG9hdg33KXn0tDlLj14/882e73048b22fa69da379698ceb294d0/DoD-Air-Module-Carousel-Frame-2_2x.jpeg?fm=webp&w=1920&h=1920&q=75',
+    },
+    {
+      type: 'image',
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/31iBw3CwMMcaxgVTroMSiF/fd0b11f4299f88f0bd738163b59bb37c/DoD-Air-Module-Carousel-Frame-3_2x.jpeg?fm=webp&w=1920&h=1920&q=75',
+    },
+    {
+      type: 'image',
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/4KGDHnq5RZt54X9R0NGTkv/eded480bbc1d0a74593d98113233654d/DoD-Air-Module-Carousel-Frame-4_2x.jpeg?fm=webp&w=1920&h=1920&q=75',
+    },
   ],
 };
