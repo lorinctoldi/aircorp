@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { CarousalProps } from 'types';
 
 export default function Carousal({ items }: CarousalProps) {
+  const ref = useRef<HTMLDivElement | null>(null);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const [mouseStart, setMouseStart] = useState<number | null>(null);
@@ -61,33 +62,29 @@ export default function Carousal({ items }: CarousalProps) {
       }
     };
 
-    document.addEventListener('touchstart', onTouchStart as EventListener);
-    document.addEventListener('touchmove', handleTouchMove, { passive: false });
-    document.addEventListener('touchend', onTouchEnd as EventListener);
+    const item = ref.current;
+    if (!item) return;
 
-    document.addEventListener('mousedown', onMouseDown);
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp);
+    item.addEventListener('mousedown', onMouseDown);
+    item.addEventListener('mousemove', onMouseMove);
+    item.addEventListener('mouseup', onMouseUp);
 
     return () => {
-      document.removeEventListener('touchstart', onTouchStart as EventListener);
-      document.removeEventListener('touchmove', handleTouchMove);
-      document.removeEventListener('touchend', onTouchEnd as EventListener);
-
-      document.removeEventListener('mousedown', onMouseDown);
-      document.removeEventListener('mousemove', onMouseMove);
-      document.removeEventListener('mouseup', onMouseUp);
+      item.removeEventListener('mousedown', onMouseDown);
+      item.removeEventListener('mousemove', onMouseMove);
+      item.removeEventListener('mouseup', onMouseUp);
     };
   }, [touchStart, touchEnd, mouseStart, mouseEnd]);
 
   return (
-    <div
-      onTouchStart={onTouchStart}
-      onTouchMove={onTouchMove}
-      onTouchEnd={onTouchEnd}
-      className="relative w-full h-auto p-5 bg-white md:p-7 lg:h-screen lg:p-16 aspect-video"
-    >
-      <div className="relative flex items-end justify-start h-full px-6 pb-12 overflow-hidden md:px-4 md:pb-20 lg:px-14 lg:pb-2">
+    <div className="relative w-full h-auto p-5 bg-white md:p-7 lg:h-screen lg:p-16 aspect-video">
+      <div
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+        ref={ref}
+        className="relative flex items-end justify-start h-full px-6 pb-12 overflow-hidden md:px-4 md:pb-20 lg:px-14 lg:pb-2"
+      >
         <div className="absolute top-0 left-0 z-10 w-full h-full">
           <div
             className="flex w-full h-full transition-transform duration-700"
