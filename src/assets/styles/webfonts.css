@@ -1,0 +1,31 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'Suisse BP Intl';
+  font-display: swap;
+  src: url('../webfonts/SuisseIntl-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 300;
+  font-family: 'Suisse BP Intl';
+  font-display: swap;
+  src: url('../webfonts/SuisseIntl-Light.woff2') format('woff2');
+}
+@font-face {
+  font-weight: bold;
+  font-family: 'Suisse BP Intl';
+  font-display: swap;
+  src: url('../webfonts/SuisseIntl-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Set';
+  font-weight: normal;
+  font-display: swap;
+  src: url('../webfonts/Set-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: 'Suisse BP Intl';
+  font-display: swap;
+  src: url('../webfonts/SuisseIntl-SemiBold.woff') format('woff');
+}

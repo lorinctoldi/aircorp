@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('webfonts.css');
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
