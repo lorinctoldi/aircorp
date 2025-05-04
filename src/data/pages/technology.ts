@@ -1,0 +1,39 @@
+import { BannerProps, TextHeroProps, SpacerProps, VideoProps } from 'types';
+
+export const bannerProps: BannerProps = {
+  type: 'video',
+  source:
+    'https://res.cloudinary.com/air-company/video/upload/c_scale,q_auto,w_1440/v1738966999/Website/AIRCO-Website-Tech-Hero-Updated_ntdaer.mp4',
+  poster:
+    'https://res.cloudinary.com/air-company/video/upload/so_0/w_1440,q_60/v1738966999/Website/AIRCO-Website-Tech-Hero-Updated_ntdaer.webp',
+  title: 'AIRMADE™ Technology',
+  linkTitle: '',
+  link: '',
+};
+
+export const textHeroProps: TextHeroProps = {
+  split: false,
+  text: [
+    'AIRCO’s proprietary AIRMADE™ Technology is an adaptable carbon conversion platform designed to enable industries to efficiently produce high-demand, fully-formulated synthetic fuels from carbon dioxide (CO₂) and hydrogen (H₂) where they are needed.',
+    'Currently focused on fuel applications, AIRCO aims to deploy the most cost-effective and scalable fuel production technology available.',
+  ],
+  title: 'An Advanced Carbon Technology Platform',
+  full: false,
+  center: false,
+  darkMode: false,
+};
+
+export const spacerProps: SpacerProps = {
+  title: 'Streamlined Process',
+  text: 'We design our proprietary catalysts and reactors in-house, merging unit operations into a single streamlined process. This approach significantly boosts efficiency and allows us to tailor and scale our products to meet each customer’s unique needs.',
+  darkMode: false,
+};
+
+export const videoProps: VideoProps = {
+  image:
+    'https://images.ctfassets.net/57fahiw4uj5z/6HYHg7NRv35v8ccIAHVXuD/8ba1b3b4e8d2302641ab578cb5c9bcda/AIRCO-Website-Tech-Dolly_Cover_2x.jpeg?fm=webp&w=1920&h=1920&q=75',
+  source:
+    'https://res.cloudinary.com/air-company/video/upload/c_scale,q_auto,w_1440/v1726974474/Website/tech-dolly-module_vk7gf2.mp4',
+  poster:
+    'https://res.cloudinary.com/air-company/video/upload/so_0/w_1440,q_60/v1726974474/Website/tech-dolly-module_vk7gf2.webp',
+};

@@ -15,7 +15,7 @@ export default function TextHero({
       {title && (
         <div className={`${split ? 'w-full' : full ? 'w-full' : 'md:w-8/10'}`}>
           <p
-            className={`inline-block mb-5 text-2xl md:mb-3 ${split ? 'font-medium text-2xl md:text-6xl' : 'font-normal md:text-3xl'}`}
+            className={`inline-block mb-5 lg:mb-6 text-2xl md:mb-3 ${split ? 'font-medium text-2xl md:text-6xl' : 'font-normal md:text-3xl'}`}
           >
             {title}
           </p>
@@ -26,7 +26,7 @@ export default function TextHero({
           return (
             <p
               key={index}
-              className={`inline-block mb-4 font-sans leading-none ${split ? 'text-lg md:text-2xl font-medium' : 'text-2xl md:text-5xl'}`}
+              className={`inline-block mb-4 lg:mb-6 font-sans leading-none ${split ? 'text-lg md:text-2xl font-medium' : 'text-2xl md:text-5xl'}`}
             >
               {item}
             </p>

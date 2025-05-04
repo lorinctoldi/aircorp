@@ -1,13 +1,14 @@
 import {
   BannerProps,
   CarousalProps,
-  HeroProps,
   ShowcaseProps,
   TableProps,
   TextHeroProps,
+  SpacerProps,
+  VideoProps,
 } from 'types';
 
-export const defenseBannerProps: BannerProps = {
+export const bannerProps: BannerProps = {
   type: 'video',
   source:
     'https://res.cloudinary.com/air-company/video/upload/c_scale,q_auto,w_640/v1744717592/Website/DoD-Hero-Module-Final-Textless-Mobile_nnsops.mp4',
@@ -16,7 +17,7 @@ export const defenseBannerProps: BannerProps = {
   title: 'Transforming Government & Defense With Advanced Fueling Technology',
 };
 
-export const defenseTextHeroProps1: TextHeroProps = {
+export const textHeroProps1: TextHeroProps = {
   split: false,
   text: [
     'AIRCO has partnered with the U.S. Department of Defense to accelerate the integration of resilient, low-impact fuel solutions into military operations.',
@@ -26,7 +27,8 @@ export const defenseTextHeroProps1: TextHeroProps = {
   center: false,
   darkMode: true,
 };
-export const defenseTextHeroProps2: TextHeroProps = {
+
+export const textHeroProps2: TextHeroProps = {
   split: false,
   text: [
     'As one of the first companies to prove that its CO₂-derived synthetic fuels can power vehicles across air, land, and sea, AIRCO has demonstrated the power, versatility, and real-world potential of its cutting-edge AIRMADE™ Technology.',
@@ -86,4 +88,25 @@ export const showcaseProps: ShowcaseProps = {
   tableItems: tableProps,
   carousalItems: carousalProps,
   darkmode: true,
+};
+
+export const spacerProps1: SpacerProps = {
+  title: 'Operational Demonstartions',
+  text: '',
+  darkMode: true,
+};
+
+export const spacerProps2: SpacerProps = {
+  title: '',
+  text: 'Learn about the importance of our ongoing work with the Defense Innovation Unit (DIU) and the U.S. Department of Defense (DoD) to provide essential energy alternatives.',
+  darkMode: true,
+};
+
+export const videoProps: VideoProps = {
+  image:
+    'https://images.ctfassets.net/57fahiw4uj5z/6WdYP9LUErNhWzlIm9XhK0/9e0d0cad0d3d51c6a37fca4a1fdf9ad6/CaseStudyImg.jpg?fm=webp&w=1920&h=1920&q=75',
+  source:
+    'https://res.cloudinary.com/air-company/video/upload/c_scale,q_auto,w_1280/v1744717891/Website/DoD-Case-Study-Module-Web_c0vxng.mp4',
+  poster:
+    'https://res.cloudinary.com/air-company/video/upload/so_0/w_1280,q_60/v1744717891/Website/DoD-Case-Study-Module-Web_c0vxng.webp',
 };

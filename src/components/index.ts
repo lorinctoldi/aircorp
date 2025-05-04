@@ -5,3 +5,5 @@ export { default as Banner } from 'components/Banner';
 export { default as Hero } from 'components/Hero';
 export { default as TextHero } from 'components/TextHero';
 export { default as Showcase } from 'components/Showcase';
+export { default as Spacer } from 'components/Spacer';
+export { default as Video } from 'components/Video';

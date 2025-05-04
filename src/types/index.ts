@@ -6,3 +6,5 @@ export * from 'types/textHero';
 export * from 'types/carousal';
 export * from 'types/table';
 export * from 'types/showcase';
+export * from 'types/spacer';
+export * from 'types/video';

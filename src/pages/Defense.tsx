@@ -1,20 +1,34 @@
-import { Layout, Banner, Hero, Showcase, TextHero } from 'components';
 import {
-  defenseBannerProps,
+  Layout,
+  Banner,
+  Hero,
+  Showcase,
+  TextHero,
+  Spacer,
+  Video,
+} from 'components';
+import {
+  bannerProps,
   showcaseProps,
-  defenseTextHeroProps1,
-  defenseTextHeroProps2,
-} from 'data';
+  textHeroProps1,
+  textHeroProps2,
+  spacerProps1,
+  spacerProps2,
+  videoProps,
+} from 'data/pages/defense';
 
 function Home() {
   return (
     <Layout>
-      <div className="pt-24 md:px-12 lg:px-20 bg-darker-gray">
-        <Banner {...defenseBannerProps} />
-        <TextHero {...defenseTextHeroProps1} />
-        <TextHero {...defenseTextHeroProps2} />
+      <section className=" bg-darker-gray">
+        <Banner {...bannerProps} />
+        <TextHero {...textHeroProps1} />
+        <TextHero {...textHeroProps2} />
+        <Spacer {...spacerProps1} />
         <Showcase {...showcaseProps} />
-      </div>
+        <Spacer {...spacerProps2} />
+        <Video {...videoProps} />
+      </section>
     </Layout>
   );
 }

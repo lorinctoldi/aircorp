@@ -14,6 +14,9 @@ module.exports = {
         'dark-gray': 'rgb(45,45,45)',
         'light-gray': 'rgb(125,125,125)',
       },
+      backgroundImage: {
+        radial: 'radial-gradient(var(--tw-gradient-stops))',
+      },
       width: {
         '1/10': '10%',
         '2/10': '20%',
