@@ -40,7 +40,7 @@ export default function Navbar({ navItems }: NavbarProps) {
               return (
                 <div key={index} className="group">
                   <Link
-                    to=""
+                    to={item.link}
                     className="inline-block text-sm underline transition-all duration-300 group decoration-transparent hover:text-light-gray hover:decoration-light-gray"
                   >
                     {item.title}

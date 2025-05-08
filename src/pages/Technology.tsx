@@ -1,10 +1,19 @@
-import { Layout, Banner, TextHero, Spacer, Video, ActionBar } from 'components';
+import {
+  Layout,
+  Banner,
+  TextHero,
+  Spacer,
+  Video,
+  ActionBar,
+  Partners,
+} from 'components';
 import {
   bannerProps,
   textHeroProps,
   actionBarProps,
   spacerProps,
   videoProps,
+  partnersProps,
 } from 'data/pages/technology';
 
 export default function Technology() {
@@ -15,6 +24,7 @@ export default function Technology() {
       <ActionBar {...actionBarProps} />
       <Spacer {...spacerProps} />
       <Video {...videoProps} />
+      <Partners {...partnersProps} />
     </Layout>
   );
 }

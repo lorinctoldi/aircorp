@@ -2,18 +2,19 @@ import { NavbarProps } from 'types';
 
 export const navbarProps: NavbarProps = {
   navItems: [
-    { title: 'technology' },
-    { title: 'AIRMADE® SAF' },
-    { title: 'defense' },
+    { title: 'Technology', link: '/technology' },
+    { title: 'AIRMADE® SAF', link: '/' },
+    { title: 'Defense', link: '/defense' },
     {
-      title: 'company',
+      title: 'Company',
       submenu: [
-        { title: 'about' },
-        { title: 'careers' },
-        { title: 'press' },
-        { title: 'AIR.Index' },
-        { title: 'FUEL STORE' },
+        { title: 'About', link: '/company' },
+        { title: 'Careers', link: '/' },
+        { title: 'Press', link: '/press' },
+        { title: 'AIR.Index', link: '/' },
+        { title: 'FUEL STORE', link: '/' },
       ],
+      link: '/company',
     },
   ],
 };

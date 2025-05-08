@@ -5,22 +5,29 @@ export default function Partners({
   subtitle,
   description,
   images,
+  darkMode,
 }: PartnersProps) {
   return (
     <section className="w-full px-6 my-14 md:px-4 lg:px-14">
       {title && (
-        <h2 className="pb-6 text-3xl leading-6 tracking-[-0.02em] text-white transition-all duration-700 ease-out transform lg:text-[45px] lg:leading-none">
+        <h2
+          className={`pb-6 text-3xl leading-6 tracking-[-0.02em] transition-all duration-700 ease-out transform lg:text-[45px] lg:leading-none ${darkMode ? 'text-white' : 'text-black'}`}
+        >
           {title}
         </h2>
       )}
       <div className="flex flex-col border-t border-light-gray gap-[12px] pt-5">
         {subtitle && (
-          <h3 className="text-2xl leading-[1.1] max-w-[500px] text-white">
+          <h3
+            className={`text-2xl leading-[1.1] max-w-[500px] ${darkMode ? 'text-white' : 'text-black'}`}
+          >
             {subtitle}
           </h3>
         )}
         {description && (
-          <p className="text-balance max-w-[375px] text-lg text-lighter-gray leading-[1.1]">
+          <p
+            className={`text-balance max-w-[375px] text-lg leading-[1.1] ${darkMode ? 'text-lighter-gray' : 'text-light-gray'}`}
+          >
             {description}
           </p>
         )}

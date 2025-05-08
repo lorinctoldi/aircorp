@@ -52,7 +52,7 @@ export default function Footer({ nav, socials, labels }: FooterProps) {
             <span>{labels.newsletter}</span>
           </div>
           <input
-            className="w-full px-8 py-4 mb-2 text-sm transition-all duration-300 ease-out outline-none text-dark-grey rounded-3xl bg-light-gray bg-opacity-10 placeholder:text-sm placeholder:text-dark-gray focus:outline focus:outline-2 focus:outline-black"
+            className="w-full px-8 py-3 mb-2 text-sm transition-all duration-300 ease-out outline-none text-dark-grey rounded-3xl bg-light-gray bg-opacity-10 placeholder:text-sm placeholder:text-dark-gray focus:outline focus:outline-2 focus:outline-black"
             placeholder={labels.placeholder}
             type="email"
             value={email}

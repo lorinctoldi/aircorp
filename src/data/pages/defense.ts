@@ -7,6 +7,7 @@ import {
   SpacerProps,
   VideoProps,
   PartnersProps,
+  TrigalleryProps,
 } from 'types';
 
 export const bannerProps: BannerProps = {
@@ -144,6 +145,7 @@ export const partnersProps1: PartnersProps = {
       alt: '',
     },
   ],
+  darkMode: true,
 };
 
 export const partnersProps2: PartnersProps = {
@@ -182,4 +184,32 @@ export const partnersProps2: PartnersProps = {
       alt: '',
     },
   ],
+  darkMode: true,
+};
+
+export const trigalleryProps: TrigalleryProps = {
+  items: [
+    {
+      alt: '',
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/2ipGMpuo76IArQOYFwVrfw/7bd37a21ab02b2dfd7d0092454f58cbf/DoD-3Up-03_2x.jpeg?fm=webp&w=1280&h=1280&q=75',
+      title: 'AIR.index',
+      link: '',
+    },
+    {
+      alt: '',
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/55F2Eg5IzLhjrUOQPbwWkT/0503a2b68fa7686d922891f9ac39c8a0/DoD-3Up-02_2x.jpeg?fm=webp&w=1280&h=1280&q=75',
+      title: 'AIRMADE™ Technology',
+      link: '',
+    },
+    {
+      alt: '',
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/NTEibuu8BEKTJH4JiMP41/c094f6cc14a39cb70cd2ff18b8d9d8c3/DoD-3Up-01_2x.png?fm=webp&w=1280&h=1280&q=75',
+      title: 'AIRMADE® SAF',
+      link: '',
+    },
+  ],
+  darkMode: true,
 };

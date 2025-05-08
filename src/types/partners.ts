@@ -8,4 +8,5 @@ export type PartnersProps = {
   subtitle: string;
   description: string;
   images: PartnerItem[];
+  darkMode: boolean;
 };

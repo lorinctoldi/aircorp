@@ -9,3 +9,5 @@ export { default as Spacer } from 'components/Spacer';
 export { default as Video } from 'components/Video';
 export { default as ActionBar } from 'components/ActionBar';
 export { default as Partners } from 'components/Partners';
+export { default as Trigallery } from 'components/Trigallery';
+export { default as Info } from 'components/Info';

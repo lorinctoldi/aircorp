@@ -6,6 +6,7 @@ import {
   Spacer,
   Video,
   Partners,
+  Trigallery,
 } from 'components';
 import {
   bannerProps,
@@ -17,6 +18,7 @@ import {
   videoProps,
   partnersProps1,
   partnersProps2,
+  trigalleryProps,
 } from 'data/pages/defense';
 
 function Home() {
@@ -24,14 +26,15 @@ function Home() {
     <Layout>
       <section className="bg-darker-gray">
         <Banner {...bannerProps} />
-        <Partners {...partnersProps1} />
-        <Partners {...partnersProps2} />
         <TextHero {...textHeroProps1} />
         <TextHero {...textHeroProps2} />
         <Spacer {...spacerProps1} />
         <Showcase {...showcaseProps} />
         <Spacer {...spacerProps2} />
         <Video {...videoProps} />
+        <Partners {...partnersProps1} />
+        <Partners {...partnersProps2} />
+        <Trigallery {...trigalleryProps} />
       </section>
     </Layout>
   );

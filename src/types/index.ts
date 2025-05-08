@@ -10,3 +10,5 @@ export * from 'types/spacer';
 export * from 'types/video';
 export * from 'types/actionBar';
 export * from 'types/partners';
+export * from 'types/trigallery';
+export * from 'types/info';
