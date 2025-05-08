@@ -1,11 +1,11 @@
 import {
   Layout,
   Banner,
-  Hero,
   Showcase,
   TextHero,
   Spacer,
   Video,
+  Partners,
 } from 'components';
 import {
   bannerProps,
@@ -15,13 +15,17 @@ import {
   spacerProps1,
   spacerProps2,
   videoProps,
+  partnersProps1,
+  partnersProps2,
 } from 'data/pages/defense';
 
 function Home() {
   return (
     <Layout>
-      <section className=" bg-darker-gray">
+      <section className="bg-darker-gray">
         <Banner {...bannerProps} />
+        <Partners {...partnersProps1} />
+        <Partners {...partnersProps2} />
         <TextHero {...textHeroProps1} />
         <TextHero {...textHeroProps2} />
         <Spacer {...spacerProps1} />

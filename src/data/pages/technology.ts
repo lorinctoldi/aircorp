@@ -1,4 +1,10 @@
-import { BannerProps, TextHeroProps, SpacerProps, VideoProps } from 'types';
+import {
+  BannerProps,
+  TextHeroProps,
+  SpacerProps,
+  VideoProps,
+  ActionBarProps,
+} from 'types';
 
 export const bannerProps: BannerProps = {
   type: 'video',
@@ -21,6 +27,12 @@ export const textHeroProps: TextHeroProps = {
   full: false,
   center: false,
   darkMode: false,
+};
+
+export const actionBarProps: ActionBarProps = {
+  title: 'Learn how you can partner with AIRCO',
+  linkTitle: 'Contact Us',
+  link: '',
 };
 
 export const spacerProps: SpacerProps = {

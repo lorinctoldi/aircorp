@@ -8,3 +8,5 @@ export * from 'types/table';
 export * from 'types/showcase';
 export * from 'types/spacer';
 export * from 'types/video';
+export * from 'types/actionBar';
+export * from 'types/partners';

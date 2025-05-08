@@ -7,3 +7,5 @@ export { default as TextHero } from 'components/TextHero';
 export { default as Showcase } from 'components/Showcase';
 export { default as Spacer } from 'components/Spacer';
 export { default as Video } from 'components/Video';
+export { default as ActionBar } from 'components/ActionBar';
+export { default as Partners } from 'components/Partners';

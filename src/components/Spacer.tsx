@@ -3,7 +3,7 @@ import { SpacerProps } from 'types';
 export default function Spacer({ title, text, darkMode }: SpacerProps) {
   return (
     <section
-      className={`w-full pt-20 px-6 md:px-8 lg:px-16 ${darkMode ? 'bg-darker-gray text-light-gray' : 'bg-white text-dark-gray'}`}
+      className={`w-full pt-20 px-8 lg:px-16 ${darkMode ? 'bg-darker-gray text-light-gray' : 'bg-white text-dark-gray'}`}
     >
       <div className="pt-4 pb-12 border-t md:flex md:pb-24 border-light-gray">
         {title && (

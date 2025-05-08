@@ -6,6 +6,7 @@ import {
   TextHeroProps,
   SpacerProps,
   VideoProps,
+  PartnersProps,
 } from 'types';
 
 export const bannerProps: BannerProps = {
@@ -109,4 +110,76 @@ export const videoProps: VideoProps = {
     'https://res.cloudinary.com/air-company/video/upload/c_scale,q_auto,w_1280/v1744717891/Website/DoD-Case-Study-Module-Web_c0vxng.mp4',
   poster:
     'https://res.cloudinary.com/air-company/video/upload/so_0/w_1280,q_60/v1744717891/Website/DoD-Case-Study-Module-Web_c0vxng.webp',
+};
+
+export const partnersProps1: PartnersProps = {
+  title: 'Government & Aviation Partners',
+  subtitle: 'Government',
+  description:
+    'U.S. government partnerships accelerate our R&D while we bring cutting-edge capabilities to support the government’s key objectives',
+  images: [
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/4Bb4qdih0YLp0e0MGlQelP/f3cd9d50edc977b6e459fd324ad32abe/DoD.png',
+      alt: '',
+    },
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/47qhpXb1RSZh1CuoybQg8k/fcf99d4c1e3ee9a82cb26fc033457979/DoE.png',
+      alt: '',
+    },
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/3frXKz3fgVR3SRMxvspWC8/9ea04acd7df0a4579556b87fa062fe5e/DIU.png',
+      alt: '',
+    },
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/6bWVINngA0K9k0UhSuml1b/347ab76f308a51b368a749156b5299f0/NASA.png',
+      alt: '',
+    },
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/4TdpdJRWLchybhtweCxtK2/61ec22184802a5d895d3fde6717f9b83/AirForce.png',
+      alt: '',
+    },
+  ],
+};
+
+export const partnersProps2: PartnersProps = {
+  title: null,
+  subtitle: 'Aviation',
+  description: 'AIRMADE® SAF customers and corporate funding backers',
+  images: [
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/2CFV0H2WGztI1hvP74Cerv/982aa683e6c5abc0b7baa4fc31ac375b/AirCanada.png',
+      alt: '',
+    },
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/5PbypWOYj9yQ9c4txJ8flW/987691c2e9c2d3c761584968e933eb70/jetBlue.png',
+      alt: '',
+    },
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/7lHIm5wO5ZHjt9fdREWXW1/4d8b3f8d61db8e8cdb49e4de9f6be727/VirginAtlantic.png',
+      alt: '',
+    },
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/4z6fLtmgwOvzK3wLAO1T6u/9facb0aa5f605a73fba91e5472fa3967/AirFrance.png',
+      alt: '',
+    },
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/3awl6Radz7eXuROlzlMjYn/a21c8d0db30bdd18c0614a7b83d4c4bc/AlaskaAirlines.png',
+      alt: '',
+    },
+    {
+      source:
+        'https://images.ctfassets.net/57fahiw4uj5z/4WiP4glI5y7Dtp0H81hTiE/5fe66f4d325aa891558701381d9f28d1/AVFuelCorp.png',
+      alt: '',
+    },
+  ],
 };

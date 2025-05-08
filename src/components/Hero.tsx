@@ -44,7 +44,7 @@ export default function Hero(props: HeroProps) {
         </div>
         <div ref={textRef} className="z-20 text-white">
           {props.title && (
-            <div
+            <h1
               className="text-2xl leading-6 transition-all duration-700 ease-out transform lg:text-6xl lg:leading-none"
               style={{
                 opacity: showText ? 100 : 0,
@@ -52,7 +52,7 @@ export default function Hero(props: HeroProps) {
               }}
             >
               {props.title}
-            </div>
+            </h1>
           )}
 
           {props.description && (

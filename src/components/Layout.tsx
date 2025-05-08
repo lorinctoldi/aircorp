@@ -7,16 +7,14 @@ type LayoutProps = {
   children: ReactNode;
 };
 
-function Layout({ children }: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar {...navbarProps} />
-      <main className="w-full text-dark-gray 2xl:flex 2xl:justify-center">
+      <main className="w-full text-dark-gray">
         {children}
         <Footer {...footerProps} />
       </main>
     </>
   );
 }
-
-export default Layout;
