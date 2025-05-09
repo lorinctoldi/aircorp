@@ -17,7 +17,7 @@ const Submenu: React.FC<SubmenuProps> = ({ items, isOpen }) => {
       <div className="flex flex-col py-5 w-4/10">
         {items.map((item, index) => (
           <Link
-            to=""
+            to={item.link}
             key={index}
             className="text-xl capitalize text-light-gray"
           >

@@ -52,7 +52,7 @@ export default function Navbar({ navItems }: NavbarProps) {
                           return (
                             <div key={subIndex} className="w-4/10">
                               <Link
-                                to=""
+                                to={subItem.link}
                                 className="text-3xl transition-colors duration-300 text-light-gray hover:text-dark-gray"
                               >
                                 {subItem.title}
@@ -89,7 +89,7 @@ export default function Navbar({ navItems }: NavbarProps) {
                   onClick={() => item.submenu && toggleSubmenu(index)}
                 >
                   <Link
-                    to=""
+                    to={item.link}
                     className="inline-block py-1 text-2xl transition-all duration-300"
                   >
                     <span>{item.title}</span>
